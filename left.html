@@ -34,15 +34,17 @@ ul {
   margin: 0;
   padding: 0;
   position: absolute;
-  left: 50%;
+  left: 35%;
   overflow: hidden;
   background-color: rgba(0,0,0,0);
 }
 
-li {
+.main-li {
   float: right;
 }
-
+.sub-li {
+  float: left;
+}
 li a {
   display: block;
   color: black;
@@ -56,16 +58,16 @@ li a:hover {
 }
 </style>
 <ul class="main-nav-ul">
-  <li><a href="/right.html">Right</a></li>
-  <li><a href="/index.html">Corpus Collosum</a></li>
-  <li><a href="/left.html">Left</a></li>
+  <li class="main-li"><a href="/right.html">Right</a></li>
+  <li class="main-li"><a href="/index.html">Corpus Collosum</a></li>
+  <li class="main-li"><a href="/left.html">Left</a></li>
 </ul>
     <center><h1>Evan S. Allhands</h1></center>
     <hr>
 <ul class="sub-nav-ul">
-  <li><a href="/Projects.html">Projects</a></li>
-  <li><a href="/Resources.html">Resources</a></li>
-  <li><a href="/CV.html">CV</a></li>
+  <li class="sub-li"><a href="/Projects.html">Projects</a></li>
+  <li class="sub-li"><a href="/Resources.html">Resources</a></li>
+  <li class="sub-li"><a href="/CV.html">CV</a></li>
 </ul>
   <hr>
   </head>
