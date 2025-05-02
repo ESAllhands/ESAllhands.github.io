@@ -57,12 +57,30 @@ li a:hover {
   <li class="main-li"><a href="/Resources.html">Resources</a></li>
   <li class="main-li"><a href="/CV.html">About</a></li>
 </ul>
-    <center><h1>Projects, Papers and Experiments. </h1></center>
+    <center><h1>Fluid Flow Around Fixed Objects. </h1></center>
     <hr>
   </head>
   <body>
-For this project, we used the Immersed Boundary method to model fluid flow around various objects fixed in a fluid domain.  <br>
-    To-do: Build out the explanation of the project, include equations, and upload videos. <br>
+<p>For this project, we used the Immersed Boundary method to model fluid flow around fixed objects in a fluid domain. For this particular project we used approximate density and viscosity of Sulfur Hexafluoride 
+    at various temperatures. Understanding flow dynamics can be useful in many engineering applications--including modeling flow around a sensor inserted in a pipe. Sulfur Hecafluoride has many applications but is also 
+    known to possess interesting flow behavior. Some applications of Sulfur Hexafluoride include Electrical Insulation (arc suppression), Ophthamology, Semiconductor Manufacturing, and Medical Imaging (contrast agent 
+    for ultrasounds). </p>
+    
+    <p>Our model utilizes the Navier-Stokes Equation with incompressibility, given by 
+    \[
+      \begin{equation}
+          \rho\left(\frac{\partial \vec{u}}{\partial t}+\vec{u}\cdot\nabla\vec{u}\right)=-\nabla p+\mu\nabla^2\vec{u}+\vec{f}
+      \end{equation}
+    \]
+    \[
+      \begin{equation}
+      \nabla\cdot\vec{u}=0
+      \end{equation}
+    \]
+      where 
+    </p>
+    <br>
+    
     $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
     <figure>
     <video width="656" height="480" controls loop="" muted="" autoplay="">
