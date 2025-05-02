@@ -77,7 +77,7 @@ li a:hover {
       \nabla\cdot\vec{u}=0
       \end{equation}
     \]
-      where \(\vec{u}\) denotes fluid velocity, \(\vec{p}\) denotes pressure, \(\rho\) denotes fluid density, \(\mu\) denotes fluid (dynamic) viscosity, \(\vec{f}\) denotes a desired external fluid force.
+      where \(\vec{u}\) denotes fluid velocity, \(\vec{p}\) denotes pressure, \(\rho\) denotes fluid density, \(\mu\) denotes fluid (dynamic) viscosity, and \(\vec{f}\) denotes a desired external fluid force. All units follow the CGS paradigm. 
  
     </p>
     <p>We use a target force given by 
@@ -141,6 +141,8 @@ li a:hover {
     </tr>
   </tbody>
 </table>
+
+    We used a maximum flow of 100, and stiffness of \(k=250,000\). An additional external fluid force of 5cm\second was used. The numerical method was unstable for timesteps larger than 0.00002, which limited the length of simulations able to be run in only a few weeks. 
     <figure>
     <video width="656" height="480" controls loop="" muted="" autoplay="">
     <source src="https://github.com/ESAllhands/ESAllhands.github.io/raw/refs/heads/main/Graphics/SF6_Sq_Re1302.mp4">
