@@ -114,9 +114,9 @@ li a:hover {
     <table border="1" style="border-collapse: collapse; margin: auto; text-align: center;">
   <thead>
     <tr>
-      <th>Approximate Temperature</th>
-      <th>Density (\(\rho\) )</th>
-      <th>Viscosity (\(\mu\) )</th>
+      <th>Temperature</th>
+      <th>Density(\(\rho\) )</th>
+      <th>Viscosity(\(\mu\) )</th>
       <th>Reynolds Number</th>
     </tr>
   </thead>
@@ -142,7 +142,12 @@ li a:hover {
   </tbody>
 </table>
 
-    We used a maximum flow of 100, and stiffness of \(k=250,000\). An additional external fluid force of 5cm\second was used. The numerical method was unstable for timesteps larger than 0.00002, which limited the length of simulations able to be run in only a few weeks. 
+    The Reynolds number is calculated by 
+    \[
+    \text{Re}=\frac{\rho U L}{\mu}
+    \]
+     where \(\rho)\ denotes fluid density, \(mu\) denotes fluid viscosity, \(U\) is the maximum flow, and \(L\) is the length of the fluid domain. We used a maximum flow (occuring in the middle of the fluid domain) of \(U=\lambda=100\).
+    We used as stiffness of \(k=250,000\). We modeled flow around no object, a square, a circle and triangle (placed asymmetrically in the fluid path). 
     <figure>
     <video width="656" height="480" controls loop="" muted="" autoplay="">
     <source src="https://github.com/ESAllhands/ESAllhands.github.io/raw/refs/heads/main/Graphics/SF6_Sq_Re1302.mp4">
