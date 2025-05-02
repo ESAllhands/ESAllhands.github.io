@@ -77,7 +77,7 @@ li a:hover {
       \nabla\cdot\vec{u}=0
       \end{equation}
     \]
-      where $\vec{u}$ denotes fluid velocity, $\vec{p}$ denotes pressure, $\rho$ denotes fluid density, $\mu$ denotes fluid (dynamic) viscosity, $\vec{f}$ denotes a desired external fluid force.
+      where \(\vec{u}\) denotes fluid velocity, \(\vec{p}\) denotes pressure, \(\rho\) denotes fluid density, \(\mu\) denotes fluid (dynamic) viscosity, \(\vec{f}\) denotes a desired external fluid force.
  
     </p>
     <p>We use a target force given by 
@@ -87,8 +87,8 @@ li a:hover {
       \end{matrix}
       \end{equation}
     \]
-    where $k$ is a desired stiffness target used to resist fluid force, $L_y$ and $L_x$ are dimensions of the fluid domain, $x_0, y_0$ are initial positions of the immersed boundary, 
-      $x, y$ are the current positions of the immersed boundary, and $F_x, F_y$ are the resulting forces. Elastic force was not used for these simulations and is left as future work. </p>
+    where \(k\) is a desired stiffness target used to resist fluid force, \(L_y\) and \(L_x\) are dimensions of the fluid domain, \(x_0, y_0\) are initial positions of the immersed boundary, 
+      \(x, y\) are the current positions of the immersed boundary, and \(F_x, F_y\) are the resulting forces. Elastic force was not used for these simulations and is left as future work. </p>
       
     <p>Our model also used a parabolic (or, Poiseuille-like) flow, which more accurately models natural flow. Parabolic flow is given by 
       \[
@@ -96,7 +96,8 @@ li a:hover {
       u(y)=\lambda 4\frac{y}{L_y}\left(1-\frac{y}{L_y}\right)
       \end{equation}
       \]
-      where $\lambda$ is a scalar representing the desired maximum flow in the middle of the fluid domain. Parabolic flow produces vanishing velocity at the boundaries since when $u(y)=0$ when $y=0, L_y$ as is easily verified by the reader. 
+      where \(\lambda\) is a scalar representing the desired maximum flow in the middle of the fluid domain. Parabolic flow produces vanishing velocity at the boundaries since
+      when \(u(y)=0\) when \(y=0, L_y\) as is easily verified by the reader. 
     </p>
     <p>The interaction equations used to model the interaction between the fluid and structure are given by 
     
