@@ -82,9 +82,7 @@ li a:hover {
     </p>
     <p>We use a target force given by 
     \[ 
-      \begin{equation}
-      F_x=k\left(x_0+\frac{L_x}{4}-x\right) ~~~~ F_y=k\left(y_0+\frac{L_y}{2}-y
-      \end{equation}
+      F_x=k\left(x_0+\frac{L_x}{4}-x\right) ~~~~ F_y=k\left(y_0+\frac{L_y}{2}-y\right)
     \]
     where \(k\) is a desired stiffness target used to resist fluid force, \(L_y\) and \(L_x\) are dimensions of the fluid domain, \(x_0, y_0\) are initial positions of the immersed boundary, 
       \(x, y\) are the current positions of the immersed boundary, and \(F_x, F_y\) are the resulting forces. Elastic force was not used for these simulations and is left as future work. </p>
@@ -109,8 +107,14 @@ li a:hover {
       \frac{\partial \vec{x}}{\partial t}=\displaystyle\int\vec{u}(\vec{x}, t)\delta(\vec{x}-\vec{\mathbb{X}}(q,r,s,t)d\mathbb{X}      \end{equation}
       \]
 
-      where 
+      where \(\mathbb{F}\) is the force from the structure, and \(\delta\) is the Dirac delta function which distributes the forces to the fluid domain in the vicinity of the immersed structure. (expound more on this later) 
     </p>
+
+    We modeled Sulfur Hexafluoride using the following parameters: 
+
+    \[
+    
+    \]
     <figure>
     <video width="656" height="480" controls loop="" muted="" autoplay="">
     <source src="https://github.com/ESAllhands/ESAllhands.github.io/raw/refs/heads/main/Graphics/SF6_Sq_Re1302.mp4">
